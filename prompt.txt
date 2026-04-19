@@ -1,0 +1,37 @@
+Generate 7 TypeScript objects for Tarot cards 50-56 (Ace to 7 of Swords) in Chinese.
+Follow the `TarotCardData` interface structure:
+{
+  name: string;
+  meaning: string;
+  meaningSummary: string;
+  advice: string;
+  image: string;
+  keywords: string[];
+  description: string;
+  meaningReversed: string; 
+  meaningReversedSummary: string;
+  adviceReversed: string;  
+}
+
+Standards (STRICT character counts in Chinese):
+- `meaning`: 400+ characters. (Detailed interpretation of the card's core energy, mental state, and external manifestations)
+- `advice`: 300+ characters. (Actionable, master-level guidance for the seeker)
+- `description`: 500+ characters. (Extremely detailed visual analysis of symbols: sword, clouds, crown, mountains, leaves, expressions, background, colors, etc)
+- `meaningReversed`: 300+ characters. (In-depth analysis of the shadow side, mental blocks, or misapplied energy)
+- `adviceReversed`: 300+ characters. (Corrective guidance for the reversed state)
+- `meaningSummary`: 50-80 characters. (Concise essence)
+- `meaningReversedSummary`: 50-80 characters. (Concise reversed essence)
+
+Cards:
+50: 宝剑一 (Ace of Swords) - /assets/cards/card_swords_1.svg
+51: 宝剑二 (Two of Swords) - /assets/cards/card_swords_2.svg
+52: 宝剑三 (Three of Swords) - /assets/cards/card_swords_3.svg
+53: 宝剑四 (Four of Swords) - /assets/cards/card_swords_4.svg
+54: 宝剑五 (Five of Swords) - /assets/cards/card_swords_5.svg
+55: 宝剑六 (Six of Swords) - /assets/cards/card_swords_6.svg
+56: 宝剑七 (Seven of Swords) - /assets/cards/card_swords_7.svg
+
+Keywords: exactly 3 keywords per card.
+Tone: Professional, academic, philosophical, master-level interpretation. Focus on the Air element's intellectual power, conflict, and strategy.
+
+Return ONLY the array of objects in TypeScript format.
